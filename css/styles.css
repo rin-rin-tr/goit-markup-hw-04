@@ -363,9 +363,15 @@ img {
   border-radius: ;
   background-color: ; */
 }
+.div-foot-parent {
+  display: flex;
+  justify-content: baseline;
+}
 .div-icons {
+  margin-left: 120px;
 }
 .div-footer {
+  width: 294px;
 }
 /* HEADER MENU  */
 .menu-link:hover::after {
