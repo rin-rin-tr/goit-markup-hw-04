@@ -442,24 +442,31 @@ img {
   background-color: #31d0aa;
 }
 /* PORTFOLIO */
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
 .overlay {
   color: var(--CLOUD, #f4f4fd);
   position: absolute;
   top: 0;
   left: 0;
   background: var(--IRIS, #4d5ae5);
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 40px;
-  padding-bottom: 164px;
+  padding: 40px 32px 164px;
   overflow: auto;
-  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
 }
+
 .overlay-text {
   font-size: 16px;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.portfolio-item {
-  position: relative;
+
+.image-container:hover .overlay {
+  transform: translateY(0);
 }
