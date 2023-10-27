@@ -420,7 +420,8 @@ img {
   color: #404bbf;
 }
 /* ICON COLOR */
-.icon-li-team {
+.icon-li-team,
+.icon-li-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,9 +430,36 @@ img {
   width: 40px;
   height: 40px;
 }
-.icon {
+.icon,
+.icon-foot {
   fill: #fff;
   display: block;
   width: 100%;
   height: 100%;
+}
+.icon-foot:hover,
+.icon-li-footer:hover {
+  background-color: #31d0aa;
+}
+/* PORTFOLIO */
+.overlay {
+  color: var(--CLOUD, #f4f4fd);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--IRIS, #4d5ae5);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  padding-bottom: 164px;
+  overflow: auto;
+  height: 100%;
+}
+.overlay-text {
+  font-size: 16px;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+.portfolio-item {
+  position: relative;
 }
