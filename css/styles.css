@@ -115,6 +115,7 @@ img {
   height: 56px;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -180,9 +181,15 @@ img {
 .contacts:focus {
   color: #404bbf;
 }
+.page-header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px, 1px, 1px,
+    rgaba(46, 47, 66, 0.16), 0px, 1px, 6px, rgba(46, 47, 66, 0.08);
+}
+
 /* hw-4 */
 .active-link {
   position: relative;
+  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active-link::after {
@@ -264,6 +271,7 @@ img {
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   border-radius: 4px;
   background: var(--CLOUD, #f4f4fd);
+  margin-bottom: 8px;
 }
 /* SECTION 3-OUR TEAM */
 .our-team-ul {
@@ -274,15 +282,16 @@ img {
   background-color: #f4f4fd;
 }
 .team-list {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   background-color: #ffffff;
-  /* padding-bottom: 32px; */
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 .team-header {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
@@ -291,18 +300,13 @@ img {
 .team-title {
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
   margin-bottom: 8px;
 }
-/* .team-paragraf {
-  font-size: 16px;
-  line-height: 1.5; /* 150% */
-/*letter-spacing: 0.02em;
-  text-align: center;
-} */
+
 .team-title,
 .team-paragraf {
   display: flex;
@@ -336,7 +340,7 @@ img {
 }
 .icon,
 .icon-foot {
-  fill: #fff;
+  fill: #f4f4fd;
   display: block;
   width: 100%;
   height: 100%;
@@ -433,12 +437,13 @@ img {
 .div-foot-parent {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 120px;
 }
 .div-footer {
   display: inline-block;
   width: 264px;
+  margin-right: 120px;
 }
 .div-icons {
   display: inline-block;
@@ -461,8 +466,4 @@ img {
 .icon-li-footer:hover {
   background-color: #31d0aa;
 }
-
-/* .page-header {
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px, 1px, 1px,
-    rgaba(46, 47, 66, 0.16), 0px, 1px, 6px, rgba(46, 47, 66, 0.08);
-} */
+/* NEW */
