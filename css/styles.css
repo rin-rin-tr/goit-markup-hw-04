@@ -442,7 +442,7 @@ img {
 /* DIVS FOOTER */
 .div-foot-parent {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: baseline;
 }
 .div-footer {
